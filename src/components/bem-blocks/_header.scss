@@ -1,1 +1,93 @@
-.header {}
+.header {
+  min-height: 114px;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding-top: 15px;
+
+  &__wrapper {
+    width: var(--content-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo-container {
+    @include reset-link;
+    display: flex;
+    align-items: center;
+    gap: 26px;
+  }
+
+  &__logo {
+    width: 84px;
+    height: 84px;
+    object-fit: cover;
+    display: block;
+  }
+
+  &__logo-txt {
+    color: #2C3661;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__list {
+    @include reset-list;
+    display: flex;
+    align-items: center;
+    gap: 36px;
+  }
+
+  &__link {
+    @include reset-link;
+    color: #2C3661;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 13px;
+    padding-top: 13px;
+    display: block;
+    box-sizing: border-box;
+    border-bottom: 2px solid transparent;
+    @include transition;
+
+    &:hover {
+      color: #D7B46A;
+      border-color: #D7B46A;
+      opacity: 1;
+    }
+
+    &_gold {
+      color: #D7B46A;
+      border-color: #D7B46A;
+    }
+
+    &_gold-contact {
+      color: #D7B46A;
+
+      &:hover {
+        border-color: transparent;
+      }
+    }
+  }
+
+  &__btn {
+    width: 157px;
+    height: 30px;
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+  }
+
+  &__whatsapp-icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/whatsapp-gold-icon.svg) no-repeat center / cover;
+  }
+}
