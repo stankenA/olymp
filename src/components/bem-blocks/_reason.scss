@@ -1,0 +1,147 @@
+.reason {
+  background-color: var(--dark);
+  height: 520px;
+  margin-bottom: 78px;
+
+  &__wrapper {
+    width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  &__left {
+    width: 50%;
+    padding: 43px 100px 40px 64px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__why {
+    color: var(--gold);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 13px;
+  }
+
+  &__swiper-list {
+    @include reset-list;
+  }
+
+  &__title {
+    color: var(--white);
+    font-size: 36px;
+    font-weight: 400;
+  }
+
+  &__description {
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 29px 0 34px;
+  }
+
+
+  &__list {
+    @include reset-list;
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+  }
+
+  &__item {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__icon {
+    width: 40px;
+    height: 35px;
+    object-fit: contain;
+    display: block;
+  }
+
+  &__item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__item-txt {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  &__item-txt-grey {
+    color: rgba(255, 255, 255, 0.56);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__right {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+  }
+
+  &__bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: 1;
+  }
+
+  &__swiper-small {
+    position: relative;
+    z-index: 2;
+    background-color: var(--dark);
+    box-sizing: border-box;
+    padding: 14px 10px 10px 19px;
+    width: 208px;
+    height: 176px;
+  }
+
+  &__swiper-small-wrapper {
+    @include reset-list;
+  }
+
+  &__swiper-small-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  &__swiper-small-icon {
+    width: 40px;
+    height: 40px;
+    display: block;
+    object-fit: cover;
+  }
+
+  &__swiper-small-txt {
+    color: var(--white);
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 25px 0 10px;
+  }
+
+  &__swiper-small-txt-gold {
+    color: var(--gold);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+  }
+}
