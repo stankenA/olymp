@@ -1,6 +1,6 @@
 .header {
   min-height: 114px;
-  background-color: #fff;
+  background-color: var(--white);
   box-sizing: border-box;
   padding-top: 15px;
   position: relative;
@@ -28,7 +28,7 @@
   }
 
   &__logo-txt {
-    color: #2C3661;
+    color: var(--dark);
     font-size: 20px;
     font-weight: 400;
     line-height: normal;
@@ -43,7 +43,7 @@
 
   &__link {
     @include reset-link;
-    color: #2C3661;
+    color: var(--dark);
     font-size: 16px;
     font-weight: 400;
     line-height: normal;
@@ -55,18 +55,18 @@
     @include transition;
 
     &:hover {
-      color: #D7B46A;
-      border-color: #D7B46A;
+      color: var(--gold);
+      border-color: var(--gold);
       opacity: 1;
     }
 
     &_gold {
-      color: #D7B46A;
-      border-color: #D7B46A;
+      color: var(--gold);
+      border-color: var(--gold);
     }
 
     &_gold-contact {
-      color: #D7B46A;
+      color: var(--gold);
 
       &:hover {
         border-color: transparent;

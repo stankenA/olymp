@@ -97,13 +97,13 @@
     height: 100%;
     display: flex;
     gap: 24px;
-    background-color: #2C3661;
-    color: #fff;
+    background-color: var(--dark);
+    color: var(--white);
     box-sizing: border-box;
     padding: 42px 37px 40px 27px;
 
     &_gold {
-      background-color: #D7B46A;
+      background-color: var(--gold);
     }
   }
 
