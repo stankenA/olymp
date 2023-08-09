@@ -1,0 +1,26 @@
+.structure {
+  margin-bottom: 78px;
+
+  &__wrapper {
+    width: var(--large-content-width);
+    margin: 0 auto;
+  }
+
+  &__list {
+    @include reset-list;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px;
+  }
+
+  &__txt {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 601px;
+    margin: 0 auto;
+  }
+}
