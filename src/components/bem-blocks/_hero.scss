@@ -1,0 +1,142 @@
+.hero {
+  height: 732px;
+  background: url(../img/promo-bg.jpg) no-repeat center / cover;
+  margin-bottom: 130px;
+
+  &__wrapper {
+    width: var(--content-width);
+    height: 100%;
+    padding-top: 224px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__swiper {
+    width: 690px;
+  }
+
+  &__swiper-wrapper {
+    @include reset-list;
+    width: 100%;
+  }
+
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+  }
+
+  &__title {
+    margin: 0;
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  &__btn {
+    width: 297px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  &__tiles {
+    @include reset-list;
+    display: grid;
+    grid-template-columns: 134px 134px;
+    grid-auto-rows: 134px;
+    gap: 17px;
+  }
+
+  &__tile {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  &__tile-icon {
+    width: 40px;
+    height: 40px;
+    display: block;
+    object-fit: cover;
+  }
+
+  &__tile-txt {
+    color: #2C3661;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+  }
+
+  &__features {
+    position: absolute;
+    bottom: -95px;
+    left: 0;
+    @include reset-list;
+    height: 190px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  &__features-item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 24px;
+    background-color: #2C3661;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 42px 37px 40px 27px;
+
+    &_gold {
+      background-color: #D7B46A;
+    }
+  }
+
+  &__features-img {
+    width: 45px;
+    height: 51px;
+    object-fit: cover;
+    display: block;
+  }
+
+  &__features-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__features-subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+  }
+
+  &__features-title {
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 3px 0 8px;
+  }
+
+  &__features-txt {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
