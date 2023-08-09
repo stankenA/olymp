@@ -6,7 +6,7 @@
   position: relative;
 
   &__wrapper {
-    width: 1222px;
+    width: var(--large-content-width);
     margin: 0 auto;
     display: flex;
     align-items: center;
