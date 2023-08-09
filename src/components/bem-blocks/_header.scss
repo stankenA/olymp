@@ -5,6 +5,27 @@
   padding-top: 15px;
   position: relative;
 
+  &_main {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+
+    .header__logo-txt {
+      color: var(--white);
+    }
+
+    .header__link {
+      color: var(--white);
+
+      &_gold-contact {
+        color: var(--gold);
+      }
+    }
+  }
+
   &__wrapper {
     width: var(--large-content-width);
     margin: 0 auto;
@@ -78,6 +99,11 @@
   &__btn {
     width: 157px;
     height: 30px;
+    @include transition;
+
+    &:hover {
+      opacity: .7;
+    }
   }
 
   &__contacts {

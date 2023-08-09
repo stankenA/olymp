@@ -3,6 +3,10 @@
   height: 520px;
   margin-bottom: 78px;
 
+  &__swiper {
+    width: 100%;
+  }
+
   &__wrapper {
     width: 1440px;
     height: 100%;
@@ -12,9 +16,10 @@
 
   &__left {
     width: 50%;
-    padding: 43px 100px 40px 64px;
+    padding: 32px 100px 0 64px;
     display: flex;
     flex-direction: column;
+    position: relative;
   }
 
   &__why {
@@ -27,6 +32,33 @@
 
   &__swiper-list {
     @include reset-list;
+  }
+
+  &__swiper-pagination {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50% !important;
+    bottom: 34px !important;
+    top: unset !important;
+    transform: translateX(-50%) !important;
+    gap: 12px;
+
+    .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: transparent;
+      border: 1px solid var(--gold);
+      margin: 0 !important;
+      padding: 0;
+      opacity: 1;
+      @include transition;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: var(--gold);
+    }
   }
 
   &__title {
@@ -110,6 +142,7 @@
     padding: 14px 10px 10px 19px;
     width: 208px;
     height: 176px;
+    margin-right: 0 !important;
   }
 
   &__swiper-small-wrapper {
@@ -143,5 +176,33 @@
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
+  }
+
+  &__swiper-small-pagination {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: unset !important;
+    bottom: unset !important;
+    right: 20px !important;
+    top: 14px !important;
+    gap: 7px;
+    width: unset !important;
+
+    .swiper-pagination-bullet {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: transparent;
+      border: 1px solid var(--gold);
+      margin: 0 !important;
+      padding: 0;
+      opacity: 1;
+      @include transition;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: var(--gold);
+    }
   }
 }
