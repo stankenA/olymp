@@ -2,22 +2,23 @@
 <html lang="ru">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Описание">
-	<meta name="keywords" content="">
-	<link rel="shortcut icon" href="@@favicon.svg" type="image/svg+xml">
-	<link rel="shortcut icon" href="@@favicon.webp" type="image/webp">
-	<link rel="shortcut icon" href="@@favicon.png" type="image/x-icon">
-	<link rel="stylesheet" href="css/libs.min.css">
-	<link rel="stylesheet" href="css/style.min.css">
-	<title>Название сайта</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Описание">
+  <meta name="keywords" content="">
+  <link rel="shortcut icon" href="@@favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="@@favicon.webp" type="image/webp">
+  <link rel="shortcut icon" href="@@favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Название сайта</title>
 </head>
 
 <!-- "favicon":"img/favicons/favicon", -->
 
 <body class="page">
-  <header class="header">
+  <header class="header header_main">
   <div class="header__wrapper">
     <a href="./index.html" class="header__logo-container">
       <img src="./img/logo.png" alt="Логотип ОЛИМП" class="header__logo">
@@ -55,9 +56,17 @@
     <section class="hero">
   <div class="hero__wrapper">
     <div class="hero__content">
-      <div class="hero__swiper">
-        <ul class="hero__swiper-wrapper">
-          <li class="hero__slide">
+      <div class="hero__swiper swiper">
+        <ul class="hero__swiper-wrapper swiper-wrapper">
+          <li class="hero__slide swiper-slide">
+            <h2 class="hero__title">
+              Полный комплекс услуг по оформлению специальных разрешений на перевозку крупногабаритных и/или
+              тяжеловесных
+              грузов
+            </h2>
+            <button type="button" class="hero__btn button">оставить заявку</button>
+          </li>
+          <li class="hero__slide swiper-slide">
             <h2 class="hero__title">
               Полный комплекс услуг по оформлению специальных разрешений на перевозку крупногабаритных и/или
               тяжеловесных
@@ -93,6 +102,7 @@
           </p>
         </li>
       </ul>
+      <span class="hero__swiper-pagination"></span>
     </div>
     <ul class="hero__features">
       <li class="hero__features-item">
@@ -267,14 +277,51 @@
         ПОЧЕМУ МЫ
       </p>
       <div class="reason__swiper swiper">
+        <h2 class="reason__title">
+          Лучшие специалисты с богатым опытом
+        </h2>
+        <p class="reason__description">
+          Решения принимаются профессионалами. Мы гарантируем высокое качество оказания услуг
+        </p>
         <ul class="reason__swiper-list swiper-wrapper">
           <li class="reason__swiper-slide swiper-slide">
-            <h2 class="reason__title">
-              Лучшие специалисты с богатым опытом
-            </h2>
-            <p class="reason__description">
-              Решения принимаются профессионалами. Мы гарантируем высокое качество оказания услуг
-            </p>
+            <ul class="reason__list">
+              <li class="reason__item">
+                <img src="./img/features-paper.svg" alt="Иконка" class="reason__icon">
+                <div class="reason__item-content">
+                  <p class="reason__item-txt">
+                    Оформим документы за 1 день без отказов
+                  </p>
+                  <p class="reason__item-txt-grey">
+                    Подберем оптимальный маршрут на любой ваш запрос
+                  </p>
+                </div>
+              </li>
+              <li class="reason__item">
+                <img src="./img/features-woman.svg" alt="Иконка" class="reason__icon">
+                <div class="reason__item-content">
+                  <p class="reason__item-txt">
+                    Подберем оптимальный маршрут на любой ваш запрос
+                  </p>
+                  <p class="reason__item-txt-grey">
+                    Полный спектр услуг по разработке специальных разрешений
+                  </p>
+                </div>
+              </li>
+              <li class="reason__item">
+                <img src="./img/features-balance-gold.svg" alt="Иконка" class="reason__icon">
+                <div class="reason__item-content">
+                  <p class="reason__item-txt">
+                    Найдем несколько вариантов маршрутов
+                  </p>
+                  <p class="reason__item-txt-grey">
+                    Полный спектр услуг по разработке специальных разрешений
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="reason__swiper-slide swiper-slide">
             <ul class="reason__list">
               <li class="reason__item">
                 <img src="./img/features-paper.svg" alt="Иконка" class="reason__icon">
@@ -313,6 +360,7 @@
           </li>
         </ul>
       </div>
+      <span class="reason__swiper-pagination"></span>
     </div>
     <div class="reason__right">
       <img src="./img/reason-bg.jpg" alt="Совещание" class="reason__bg">
@@ -327,7 +375,17 @@
               проектов ОДД разработано
             </p>
           </li>
+          <li class="reason__swiper-small-slide swiper-slide">
+            <img src="./img/book-gold.svg" alt="Иконка" class="reason__swiper-small-icon">
+            <p class="reason__swiper-small-txt">
+              > 30 000
+            </p>
+            <p class="reason__swiper-small-txt-gold">
+              проектов ОДД разработано
+            </p>
+          </li>
         </ul>
+        <span class="reason__swiper-small-pagination"></span>
       </div>
     </div>
   </div>
@@ -345,7 +403,42 @@
     </p>
     <div class="feedback__swiper swiper">
       <ul class="feedback__swiper-wrapper swiper-wrapper">
-        <li class="feedback__swiper-slide">
+        <li class="feedback__swiper-slide swiper-slide">
+          <img src="./img/letter.jpg" alt="Письмо" class="feedback__img">
+          <p class="feedback__swiper-txt">
+            Название компании
+          </p>
+          <a href="#" class="feedback__link">читать</a>
+        </li>
+        <li class="feedback__swiper-slide swiper-slide">
+          <img src="./img/letter.jpg" alt="Письмо" class="feedback__img">
+          <p class="feedback__swiper-txt">
+            Название компании
+          </p>
+          <a href="#" class="feedback__link">читать</a>
+        </li>
+        <li class="feedback__swiper-slide swiper-slide">
+          <img src="./img/letter.jpg" alt="Письмо" class="feedback__img">
+          <p class="feedback__swiper-txt">
+            Название компании
+          </p>
+          <a href="#" class="feedback__link">читать</a>
+        </li>
+        <li class="feedback__swiper-slide swiper-slide">
+          <img src="./img/letter.jpg" alt="Письмо" class="feedback__img">
+          <p class="feedback__swiper-txt">
+            Название компании
+          </p>
+          <a href="#" class="feedback__link">читать</a>
+        </li>
+        <li class="feedback__swiper-slide swiper-slide">
+          <img src="./img/letter.jpg" alt="Письмо" class="feedback__img">
+          <p class="feedback__swiper-txt">
+            Название компании
+          </p>
+          <a href="#" class="feedback__link">читать</a>
+        </li>
+        <li class="feedback__swiper-slide swiper-slide">
           <img src="./img/letter.jpg" alt="Письмо" class="feedback__img">
           <p class="feedback__swiper-txt">
             Название компании
@@ -354,6 +447,7 @@
         </li>
       </ul>
     </div>
+    <span class="feedback__swiper-pagintaion"></span>
   </div>
 </section>
     <section class="bottom-contacts">
@@ -494,9 +588,9 @@
     </form>
   </div>
 </footer>
-  <script src="js/libs.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
-
 </body>
 
 </html>
