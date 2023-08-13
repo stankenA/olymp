@@ -64,7 +64,7 @@
               тяжеловесных
               грузов
             </h2>
-            <button type="button" class="hero__btn button">оставить заявку</button>
+            <button type="button" class="hero__btn button popup-btn">оставить заявку</button>
           </li>
           <li class="hero__slide swiper-slide">
             <h2 class="hero__title">
@@ -72,7 +72,7 @@
               тяжеловесных
               грузов
             </h2>
-            <button type="button" class="hero__btn button">оставить заявку</button>
+            <button type="button" class="hero__btn button popup-btn">оставить заявку</button>
           </li>
         </ul>
       </div>
@@ -588,6 +588,44 @@
     </form>
   </div>
 </footer>
+  <section class="popup">
+  <div class="popup__wrapper">
+    <h2 class="popup__title">
+      Закажите обратный звонок
+    </h2>
+    <div class="popup__content">
+      <form class="popup__form">
+        <fieldset class="popup__fieldset">
+          <div class="popup__row">
+            <label for="name" class="popup__label">ФИО</label>
+            <input type="text" name="name" id="name" class="popup__input" placeholder="Иванович Иван Иванов">
+          </div>
+          <div class="popup__row">
+            <label for="name" class="popup__label">Телефон</label>
+            <input type="tel" name="tel" id="tel" class="popup__input" placeholder="+7 (999) 999-99-99">
+          </div>
+          <div class="popup__row">
+            <label for="name" class="popup__label">ФИО</label>
+            <input type="mail" name="mail" id="mail" class="popup__input" placeholder="pochta@mail.ru">
+          </div>
+        </fieldset>
+        <button type="submit" class="popup__submit button">отправить</button>
+      </form>
+      <span class="popup__line"></span>
+      <div class="popup__description">
+        <h3 class="popup__subtitle">
+          Заголовок
+        </h3>
+        <p class="popup__txt">
+          Aliquam sit amet tellus et leo dictum tristique vitae quis ipsum. Pellentesque augue elit, ornare a dolor sit
+          amet, ultrices varius sapien. Mauris non tellus convallis, auctor elit in, iaculis augue. Maecenas enim augue,
+          viverra vel blandit sed, tempor nec turpis.
+        </p>
+      </div>
+    </div>
+    <button type="button" class="popup__close"></button>
+  </div>
+</section>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>

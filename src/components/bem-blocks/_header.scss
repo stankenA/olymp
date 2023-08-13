@@ -99,11 +99,6 @@
   &__btn {
     width: 157px;
     height: 30px;
-    @include transition;
-
-    &:hover {
-      opacity: .7;
-    }
   }
 
   &__contacts {

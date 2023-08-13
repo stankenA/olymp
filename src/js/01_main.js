@@ -67,3 +67,40 @@ class Header {
 
 // const header = new Header('.header');
 // header.setEventListeners();
+
+class Popup {
+  constructor(popupSelector) {
+    this._popup = document.querySelector(popupSelector);
+    this._closeBtn = this._popup.querySelector('.popup__close');
+  }
+
+  opendPopup() {
+    this._popup.classList.add('popup_opened');
+  }
+
+  _closePopup() {
+    this._popup.classList.remove('popup_opened');
+  }
+
+  setEventListeners() {
+    this._closeBtn.addEventListener('click', () => {
+      this._closePopup();
+    });
+
+    this._popup.addEventListener('mousedown', (evt) => {
+      if (evt.target.classList.contains('popup_opened')) {
+        this._closePopup();
+      }
+    })
+  }
+}
+
+const popup = new Popup('.popup');
+popup.setEventListeners();
+
+const allPopupBtns = document.querySelectorAll('.popup-btn');
+allPopupBtns.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    popup.opendPopup();
+  })
+});

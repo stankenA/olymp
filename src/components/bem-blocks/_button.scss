@@ -10,4 +10,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
+  border: 1px solid var(--gold);
+  @include transition;
+
+  &:hover {
+    background-color: var(--dark);
+    color: var(--white);
+  }
 }

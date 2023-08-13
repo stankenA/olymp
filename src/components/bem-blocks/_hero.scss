@@ -72,11 +72,6 @@
     width: 297px;
     height: 50px;
     font-size: 20px;
-    @include transition;
-
-    &:hover {
-      opacity: .7;
-    }
   }
 
   &__tiles {
