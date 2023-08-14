@@ -3,12 +3,24 @@
   background: url(../img/promo-bg.jpg) no-repeat center / cover;
   margin-bottom: 130px;
 
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 488px;
+  }
+
+  @media screen and (max-width: 1439px) {
+    height: 675px;
+  }
+
   &__wrapper {
     width: var(--content-width);
     height: 100%;
     padding-top: 224px;
     margin: 0 auto;
     position: relative;
+
+    @media screen and (max-width: 1439px) {
+      padding-top: 184px;
+    }
   }
 
   &__content {
@@ -19,6 +31,10 @@
 
   &__swiper {
     width: 690px;
+
+    @media screen and (max-width: 1439px) {
+      width: 621px;
+    }
   }
 
   &__swiper-wrapper {
@@ -66,6 +82,10 @@
     font-size: 32px;
     font-weight: 400;
     line-height: 150%;
+
+    @media screen and (max-width: 1439px) {
+      font-size: 28px;
+    }
   }
 
   &__btn {
@@ -80,6 +100,10 @@
     grid-template-columns: 134px 134px;
     grid-auto-rows: 134px;
     gap: 17px;
+
+    @media screen and (max-width: 1023px) {
+      display: none;
+    }
   }
 
   &__tile {
@@ -119,6 +143,19 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+
+    @media screen and (max-width: 1439px) {
+      bottom: -80px;
+      height: 164px;
+    }
+
+    @media screen and (max-width: 1023px) {
+      left: 50%;
+      transform: translateX(-50%);
+      grid-template-columns: 1fr;
+      width: 60%;
+      bottom: -50px;
+    }
   }
 
   &__features-item {
@@ -130,6 +167,14 @@
     color: var(--white);
     box-sizing: border-box;
     padding: 42px 37px 40px 27px;
+
+    @media screen and (max-width: 1439px) {
+      padding: 24px 19px 26px 19px;
+    }
+
+    @media screen and (max-width: 1023px) {
+      padding: 42px 37px 40px 27px;
+    }
 
     &_gold {
       background-color: var(--gold);

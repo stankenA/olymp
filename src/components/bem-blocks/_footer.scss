@@ -8,6 +8,18 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 1439px) {
+      width: var(--content-width);
+    }
+
+    @media screen and (max-width: 1023px) {
+      flex-direction: column-reverse;
+      gap: 28px;
+      align-items: center;
+      position: relative;
+      width: 52%;
+    }
   }
 
   &__nav {
@@ -20,6 +32,19 @@
       'menu contacts';
     column-gap: 75px;
     row-gap: 7px;
+
+    @media screen and (max-width: 1439px) {
+      width: 347px;
+      padding-bottom: 14px;
+      column-gap: 20px;
+      row-gap: 7px;
+    }
+
+    @media screen and (max-width: 1023px) {
+      row-gap: 25px;
+      padding-bottom: 27px;
+      width: 100%;
+    }
   }
 
   &__container {
@@ -61,6 +86,10 @@
     align-items: center;
     gap: 20px;
 
+    @media screen and (max-width: 1439px) {
+      font-size: 14px;
+    }
+
     &_whatsapp::after {
       content: '';
       display: block;
@@ -93,12 +122,32 @@
     line-height: normal;
     position: relative;
     bottom: -10px;
+
+    @media screen and (max-width: 1439px) {
+      font-size: 15px;
+    }
+
+    @media screen and (max-width: 1023px) {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -35px;
+    }
   }
 
   &__form {
     width: 440px;
     padding-bottom: 34px;
     border-bottom: 1px solid var(--white);
+
+    @media screen and (max-width: 1439px) {
+      width: 394px;
+    }
+
+    @media screen and (max-width: 1023px) {
+      padding-bottom: 28px;
+      width: 100%;
+    }
   }
 
   &__form-txt {
@@ -107,6 +156,11 @@
     font-weight: 400;
     line-height: normal;
     margin-bottom: 24px;
+
+    @media screen and (max-width: 1439px) {
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
   }
 
   &__row {
@@ -114,6 +168,10 @@
     height: 54px;
     display: flex;
     margin-bottom: 10px;
+
+    @media screen and (max-width: 1439px) {
+      height: 46px;
+    }
   }
 
   &__input {
@@ -161,6 +219,10 @@
     justify-content: center;
     gap: 9px;
     @include transition;
+
+    @media screen and (max-width: 1439px) {
+      height: 40px;
+    }
 
     &:hover {
       opacity: .7;

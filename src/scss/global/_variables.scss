@@ -8,6 +8,15 @@
   --large-content-width: 1222px;
   --content-width: 1044px;
 
+  @media screen and (max-width: 1439px) {
+    --large-content-width: 1000px;
+    --content-width: 980px;
+  }
+
+  @media screen and (max-width: 1023px) {
+    --content-width: 720px;
+  }
+
   @media screen and (max-width: 767px) {
     --content-width: 94%;
   }

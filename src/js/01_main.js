@@ -29,8 +29,21 @@ const reasonSecondSwiper = new Swiper('.reason__swiper-small', {
 });
 
 const feedbackSwiper = new Swiper('.feedback__swiper', {
-  slidesPerView: 4,
-  spaceBetween: 20,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    500: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    769: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+
+  },
   grabCursor: true,
   pagination: {
     el: ".feedback__swiper-pagintaion",
@@ -41,22 +54,28 @@ const feedbackSwiper = new Swiper('.feedback__swiper', {
 class Header {
   constructor(headerSelector) {
     this._header = document.querySelector(headerSelector);
-    this._menu = this._header.querySelector('.header__bottom');
+    this._menu = this._header.querySelector('.header__right');
     this._hamburger = this._header.querySelector('.header__hamburger');
     this._closeBtn = this._header.querySelector('.header__close');
+    this._logoTxt = this._header.querySelector('.header__logo-txt');
+    this._page = document.querySelector('.page');
   }
 
-  _toggleMenu() {
-    this._menu.classList.toggle('header__bottom_opened');
+  _openMenu() {
+    this._menu.classList.add('header__right_opened');
+    this._logoTxt.classList.add('header__logo-txt_dark');
+    this._page.classList.add('page_blocked');
   }
 
   _closeMenu() {
-    this._menu.classList.remove('header__bottom_opened');
+    this._menu.classList.remove('header__right_opened');
+    this._logoTxt.classList.remove('header__logo-txt_dark');
+    this._page.classList.remove('page_blocked');
   }
 
   setEventListeners() {
     this._hamburger.addEventListener('click', () => {
-      this._toggleMenu();
+      this._openMenu();
     });
 
     this._closeBtn.addEventListener('click', () => {
@@ -65,8 +84,8 @@ class Header {
   }
 }
 
-// const header = new Header('.header');
-// header.setEventListeners();
+const header = new Header('.header');
+header.setEventListeners();
 
 class Popup {
   constructor(popupSelector) {

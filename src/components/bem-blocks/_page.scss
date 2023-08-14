@@ -3,4 +3,8 @@
   font-family: 'Nokia Sans S60', sans-serif;
   color: var(--dark);
   font-weight: 400;
+
+  &_blocked {
+    overflow: hidden;
+  }
 }

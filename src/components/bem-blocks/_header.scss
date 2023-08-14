@@ -1,5 +1,6 @@
 .header {
   min-height: 114px;
+  width: 100%;
   background-color: var(--white);
   box-sizing: border-box;
   padding-top: 15px;
@@ -32,6 +33,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media screen and (max-width: 1023px) {
+      width: var(--content-width);
+    }
   }
 
   &__logo-container {
@@ -39,6 +44,14 @@
     display: flex;
     align-items: center;
     gap: 26px;
+
+    @media screen and (max-width: 1439px) {
+      gap: 16px;
+    }
+
+    @media screen and (max-width: 1023px) {
+      z-index: 16;
+    }
   }
 
   &__logo {
@@ -46,6 +59,11 @@
     height: 84px;
     object-fit: cover;
     display: block;
+
+    @media screen and (max-width: 1439px) {
+      width: 70px;
+      height: 70px;
+    }
   }
 
   &__logo-txt {
@@ -53,6 +71,55 @@
     font-size: 20px;
     font-weight: 400;
     line-height: normal;
+
+    @media screen and (max-width: 1439px) {
+      font-size: 16px;
+    }
+
+    &_dark {
+      color: var(--dark) !important;
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    @include transition;
+
+    @media screen and (max-width: 1439px) {
+      gap: 35px;
+    }
+
+    @media screen and (max-width: 1023px) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: var(--white);
+      visibility: hidden;
+      opacity: 0;
+      transform: translateY(-100%);
+      flex-direction: column;
+      justify-content: center;
+      z-index: 15;
+      overflow: scroll;
+
+      .header__link {
+        color: var(--dark);
+
+        &_gold-contact {
+          color: var(--gold);
+        }
+      }
+    }
+
+    &_opened {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   &__list {
@@ -60,6 +127,15 @@
     display: flex;
     align-items: center;
     gap: 36px;
+
+    @media screen and (max-width: 1439px) {
+      gap: 24px;
+    }
+
+    @media screen and (max-width: 1023px) {
+      flex-direction: column;
+      gap: 3px;
+    }
   }
 
   &__link {
@@ -75,14 +151,29 @@
     border-bottom: 2px solid transparent;
     @include transition;
 
+    @media screen and (max-width: 1439px) {
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 1023px) {
+      color: var(--dark);
+      padding-top: 0;
+      padding-bottom: 4px;
+      font-size: 24px;
+
+      &_gold-contact {
+        color: var(--gold);
+      }
+    }
+
     &:hover {
       color: var(--gold);
       border-color: var(--gold);
       opacity: 1;
     }
 
-    &_gold {
-      color: var(--gold);
+    &_active {
+      color: var(--gold) !important;
       border-color: var(--gold);
     }
 
@@ -99,12 +190,26 @@
   &__btn {
     width: 157px;
     height: 30px;
+
+    @media screen and (max-width: 1439px) {
+      width: 126px;
+    }
+
+    @media screen and (max-width: 1023px) {
+      width: 238px;
+      height: 40px;
+      font-size: 22px;
+    }
   }
 
   &__contacts {
     display: flex;
     align-items: center;
     gap: 21px;
+
+    @media screen and (max-width: 1439px) {
+      gap: 15px;
+    }
   }
 
   &__whatsapp-icon {
@@ -112,5 +217,36 @@
     width: 24px;
     height: 24px;
     background: url(../img/whatsapp-gold-icon.svg) no-repeat center / cover;
+  }
+
+  &__hamburger {
+    @include reset-btn;
+    display: none;
+
+    @media screen and (max-width: 1023px) {
+      display: block;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      background: url(../img/hamburger.svg) no-repeat center / contain;
+    }
+  }
+
+  &__close {
+    @include reset-btn;
+    display: none;
+
+    @media screen and (max-width: 1023px) {
+      display: block;
+      position: absolute;
+      right: 25px;
+      top: 40px;
+      width: 30px;
+      height: 30px;
+      background: url(../img/close-black.svg) no-repeat center / contain;
+    }
   }
 }
