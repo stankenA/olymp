@@ -3,12 +3,18 @@
   background: url(../img/promo-bg.jpg) no-repeat center / cover;
   margin-bottom: 130px;
 
+
+  @media screen and (max-width: 1439px) {
+    height: 675px;
+  }
+
   @media screen and (max-width: 1023px) {
     margin-bottom: 488px;
   }
 
-  @media screen and (max-width: 1439px) {
-    height: 675px;
+  @media screen and (max-width: 767px) {
+    height: 594px;
+    margin-bottom: 418px;
   }
 
   &__wrapper {
@@ -20,6 +26,10 @@
 
     @media screen and (max-width: 1439px) {
       padding-top: 184px;
+    }
+
+    @media screen and (max-width: 767px) {
+      padding-top: 174px;
     }
   }
 
@@ -35,6 +45,10 @@
     @media screen and (max-width: 1439px) {
       width: 621px;
     }
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
   }
 
   &__swiper-wrapper {
@@ -46,6 +60,10 @@
     display: flex;
     flex-direction: column;
     gap: 90px;
+
+    @media screen and (max-width: 767px) {
+      gap: 41px;
+    }
   }
 
   &__swiper-pagination {
@@ -58,6 +76,10 @@
     left: 50% !important;
     bottom: -88px !important;
     transform: translateX(-50%) !important;
+
+    @media screen and (max-width: 767px) {
+      bottom: -56px !important;
+    }
 
     .swiper-pagination-bullet {
       width: 12px;
@@ -86,12 +108,24 @@
     @media screen and (max-width: 1439px) {
       font-size: 28px;
     }
+
+    @media screen and (max-width: 767px) {
+      font-size: 14px;
+      font-family: 'Unbounded';
+    }
   }
 
   &__btn {
     width: 297px;
     height: 50px;
     font-size: 20px;
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      height: 40px;
+      font-size: 14px;
+      color: var(--white);
+    }
   }
 
   &__tiles {
@@ -156,6 +190,11 @@
       width: 60%;
       bottom: -50px;
     }
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      bottom: -31px;
+    }
   }
 
   &__features-item {
@@ -176,6 +215,11 @@
       padding: 42px 37px 40px 27px;
     }
 
+    @media screen and (max-width: 767px) {
+      padding: 33px 20px 27px 16px;
+      gap: 15px;
+    }
+
     &_gold {
       background-color: var(--gold);
     }
@@ -186,6 +230,12 @@
     height: 51px;
     object-fit: cover;
     display: block;
+
+    @media screen and (max-width: 767px) {
+      width: 35px;
+      height: 40px;
+      object-fit: contain;
+    }
   }
 
   &__features-content {
@@ -198,6 +248,10 @@
     font-weight: 400;
     line-height: normal;
     margin: 0;
+
+    @media screen and (max-width: 767px) {
+      font-size: 12px;
+    }
   }
 
   &__features-title {
@@ -206,6 +260,12 @@
     font-weight: 400;
     line-height: normal;
     margin: 3px 0 8px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 20px;
+      margin-top: 5px;
+      margin-bottom: 12px;
+    }
   }
 
   &__features-txt {

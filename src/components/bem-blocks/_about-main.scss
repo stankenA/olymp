@@ -10,6 +10,10 @@
     margin-bottom: 110px;
   }
 
+  @media screen and (max-width: 767px) {
+    margin-bottom: 65px;
+  }
+
   &__wrapper {
     width: var(--large-content-width);
     margin: 0 auto;
@@ -21,6 +25,10 @@
       gap: 90px;
       align-items: center;
       width: var(--content-width);
+    }
+
+    @media screen and (max-width: 767px) {
+      align-items: flex-start;
     }
   }
 
@@ -36,6 +44,13 @@
       width: 374px;
       height: 384px;
     }
+
+    @media screen and (max-width: 767px) {
+      width: 76%;
+      height: calc(100vw * .7);
+      min-width: 213px;
+      min-height: 227px;
+    }
   }
 
   &__gold-square {
@@ -46,6 +61,13 @@
     left: 27px;
     background-color: var(--gold);
     z-index: 2;
+
+    @media screen and (max-width: 767px) {
+      width: 106%;
+      height: 106%;
+      top: 7px;
+      left: 6px;
+    }
   }
 
   &__img-container {
@@ -56,6 +78,11 @@
     top: 27px;
     left: 27px;
     z-index: 3;
+
+    @media screen and (max-width: 767px) {
+      top: 14px;
+      left: 14px;
+    }
   }
 
   &__experience {
@@ -73,6 +100,13 @@
       width: 170px;
       height: 170px;
     }
+
+    @media screen and (max-width: 767px) {
+      width: 104px;
+      height: 104px;
+      border-width: 13px;
+      right: -62px;
+    }
   }
 
   &__experience-content {
@@ -87,6 +121,10 @@
     @media screen and (max-width: 1439px) {
       padding: 15px 18px 10px 19px;
     }
+
+    @media screen and (max-width: 767px) {
+      padding: 14px 10px 10px;
+    }
   }
 
   &__icon {
@@ -94,6 +132,11 @@
     height: 38px;
     display: block;
     object-fit: cover;
+
+    @media screen and (max-width: 767px) {
+      width: 21px;
+      height: 21px;
+    }
   }
 
   &__experience-txt {
@@ -101,6 +144,11 @@
     font-size: 18px;
     font-style: normal;
     line-height: normal;
+
+    @media screen and (max-width: 767px) {
+      font-size: 12px;
+      line-height: 11px;
+    }
   }
 
   &__txt-large {
@@ -110,6 +158,12 @@
 
     @media screen and (max-width: 1439px) {
       font-size: 54px;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 30px;
+      letter-spacing: -1px;
+      line-height: 27px;
     }
   }
 
@@ -123,6 +177,11 @@
     @media screen and (max-width: 1023px) {
       width: 76%;
     }
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      align-self: flex-start;
+    }
   }
 
   &__subtitle {
@@ -130,6 +189,10 @@
     font-size: 24px;
     font-weight: 400;
     line-height: normal;
+
+    @media screen and (max-width: 767px) {
+      font-size: 14px;
+    }
   }
 
   &__title {
@@ -137,6 +200,12 @@
     font-weight: 400;
     line-height: 150%;
     margin: 7px 0 41px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 21px;
+      margin-top: 1px;
+      margin-bottom: 22px;
+    }
   }
 
   &__txt {
@@ -145,6 +214,10 @@
     font-weight: 400;
     line-height: 150%;
     margin-bottom: 20px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 14px;
+    }
   }
 
   &__bottom {
@@ -152,10 +225,19 @@
     display: flex;
     align-items: center;
     gap: 55px;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column-reverse;
+      gap: 13px;
+    }
   }
 
   &__link {
     width: 246px;
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
   }
 
   &__signature {
@@ -167,6 +249,11 @@
     @media screen and (max-width: 1439px) {
       width: 192px;
       height: 114px;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 150px;
+      height: 100px;
     }
   }
 }

@@ -1,6 +1,10 @@
 .structure {
   margin-bottom: 78px;
 
+  @media screen and (max-width: 767px) {
+    margin-bottom: 50px;
+  }
+
   &__wrapper {
     width: var(--large-content-width);
     margin: 0 auto;
@@ -28,6 +32,12 @@
       grid-template-columns: repeat(2, 170px);
       grid-auto-rows: 170px;
       gap: 16px;
+    }
+
+    @media screen and (max-width: 767px) {
+      grid-template-columns: repeat(2, 90px);
+      grid-auto-rows: 90px;
+      gap: 9px;
     }
   }
 
@@ -74,6 +84,11 @@
     &_olymp {
       width: 145px;
       height: 145px;
+
+      @media screen and (max-width: 767px) {
+        width: 71px;
+        height: 71px;
+      }
     }
   }
 
@@ -88,6 +103,10 @@
     @media screen and (max-width: 1023px) {
       font-size: 18px;
       max-width: 500px;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 16px;
     }
   }
 }

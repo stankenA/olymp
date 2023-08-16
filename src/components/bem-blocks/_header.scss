@@ -64,6 +64,11 @@
       width: 70px;
       height: 70px;
     }
+
+    @media screen and (max-width: 767px) {
+      width: 50px;
+      height: 50px;
+    }
   }
 
   &__logo-txt {
@@ -166,6 +171,10 @@
       }
     }
 
+    @media screen and (max-width: 767px) {
+      font-size: 22px;
+    }
+
     &:hover {
       color: var(--gold);
       border-color: var(--gold);
@@ -227,11 +236,16 @@
       display: block;
       position: absolute;
       right: 20px;
-      top: 50%;
-      transform: translateY(-50%);
+      top: 38px;
       width: 30px;
       height: 30px;
       background: url(../img/hamburger.svg) no-repeat center / contain;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 24px;
+      height: 24px;
+      top: 29px;
     }
   }
 
@@ -247,6 +261,10 @@
       width: 30px;
       height: 30px;
       background: url(../img/close-black.svg) no-repeat center / contain;
+    }
+
+    @media screen and (max-width: 767px) {
+      top: 23px;
     }
   }
 }

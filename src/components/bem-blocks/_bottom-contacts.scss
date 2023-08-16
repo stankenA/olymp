@@ -3,6 +3,10 @@
   width: 100%;
   position: relative;
 
+  @media screen and (max-width: 767px) {
+    height: 711px;
+  }
+
   &__map {
     position: absolute;
     top: 0;
@@ -23,6 +27,11 @@
     @media screen and (max-width: 1023px) {
       width: var(--content-width);
     }
+
+    @media screen and (max-width: 767px) {
+      padding-top: 226px;
+      justify-content: center;
+    }
   }
 
   &__box {
@@ -33,6 +42,11 @@
     @media screen and (max-width: 1439px) {
       width: 459px;
       height: 439px;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 88%;
+      height: 450px;
     }
   }
 
@@ -49,6 +63,11 @@
     align-items: center;
     position: relative;
     z-index: 3;
+
+    @media screen and (max-width: 767px) {
+      padding-top: 22px;
+      padding-bottom: 27px;
+    }
   }
 
   &__gold-square {
@@ -60,6 +79,12 @@
     z-index: 2;
     bottom: 27px;
     right: 27px;
+
+    @media screen and (max-width: 767px) {
+      bottom: 10px;
+      right: 10px;
+      background: var(--gold);
+    }
   }
 
   &__title {
@@ -73,6 +98,11 @@
     @media screen and (max-width: 1439px) {
       margin-bottom: 14px;
     }
+
+    @media screen and (max-width: 767px) {
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
   }
 
   &__content {
@@ -80,6 +110,10 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    @media screen and (max-width: 767px) {
+      width: calc(100% - 12px);
+    }
   }
 
   &__row {
@@ -88,6 +122,10 @@
     display: flex;
     justify-content: space-between;
     gap: 14px;
+
+    @media screen and (max-width: 767px) {
+      gap: 10px;
+    }
   }
 
   &__info {

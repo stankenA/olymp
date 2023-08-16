@@ -11,6 +11,10 @@
     height: unset;
   }
 
+  @media screen and (max-width: 767px) {
+    margin-bottom: 50px;
+  }
+
   &__swiper {
     width: 100%;
   }
@@ -51,6 +55,10 @@
       padding-left: 0;
       padding-right: 0;
       width: 61%;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: var(--content-width);
     }
   }
 

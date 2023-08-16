@@ -15,6 +15,10 @@
     text-align: center;
     font-size: 20px;
     line-height: normal;
+
+    @media screen and (max-width: 767px) {
+      font-size: 14px;
+    }
   }
 
   &__title {
@@ -22,6 +26,12 @@
     font-size: 36px;
     line-height: normal;
     margin: 13px 0 17px;
+
+    @media screen and (max-width: 767px) {
+      margin-top: 5px;
+      margin-bottom: 12px;
+      font-size: 20px;
+    }
   }
 
   &__description {
@@ -31,12 +41,21 @@
     font-size: 20px;
     line-height: normal;
     max-width: 625px;
+
+    @media screen and (max-width: 767px) {
+      max-width: 242px;
+      font-size: 14px;
+    }
   }
 
   &__swiper {
     margin-top: 38px;
     width: 100%;
     position: relative;
+
+    @media screen and (max-width: 767px) {
+      margin-top: 50px;
+    }
   }
 
   &__swiper-wrapper {
@@ -54,7 +73,7 @@
   &__img {
     width: 100%;
     height: 175px;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
     object-position: top;
   }
