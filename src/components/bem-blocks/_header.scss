@@ -6,6 +6,10 @@
   padding-top: 15px;
   position: relative;
 
+  @media screen and (max-width: 767px) {
+    min-height: 88px;
+  }
+
   &_main {
     background-color: transparent;
     position: absolute;
@@ -13,6 +17,12 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 3;
+
+    .header__hamburger {
+      @media screen and (max-width: 1023px) {
+        background-image: url(../img/hamburger.svg);
+      }
+    }
 
     .header__logo-txt {
       color: var(--white);
@@ -90,7 +100,7 @@
     display: flex;
     align-items: center;
     gap: 40px;
-    @include transition;
+    @include transition(.8s);
 
     @media screen and (max-width: 1439px) {
       gap: 35px;
@@ -239,7 +249,7 @@
       top: 38px;
       width: 30px;
       height: 30px;
-      background: url(../img/hamburger.svg) no-repeat center / contain;
+      background: url(../img/hamburger-dark.svg) no-repeat center / contain;
     }
 
     @media screen and (max-width: 767px) {

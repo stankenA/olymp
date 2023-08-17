@@ -1,0 +1,37 @@
+.breadcrumbs {
+  margin-top: 10px;
+  margin-bottom: 38px;
+
+  &__wrapper {
+    width: var(--large-content-width);
+    margin: 0 auto;
+
+    @media screen and (max-width: 1023px) {
+      width: var(--content-width);
+    }
+  }
+
+  &__list {
+    @include reset-list;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 18px;
+    row-gap: 5px;
+  }
+
+  &__link {
+    @include reset-link;
+    color: #AAA;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__line {
+    color: #AAA;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+  }
+}

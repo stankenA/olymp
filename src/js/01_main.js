@@ -51,6 +51,16 @@ const feedbackSwiper = new Swiper('.feedback__swiper', {
   },
 });
 
+const projectSwiper = new Swiper('.project__swiper', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  grabCursor: true,
+  pagination: {
+    el: ".project__swiper-pagination",
+    clickable: true,
+  },
+});
+
 class Header {
   constructor(headerSelector) {
     this._header = document.querySelector(headerSelector);
