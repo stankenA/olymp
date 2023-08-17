@@ -125,26 +125,4 @@
       margin-top: 27px;
     }
   }
-
-  &__back {
-    @include reset-link;
-    background: var(--dark);
-    box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.10);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #FFF;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: normal;
-    width: 365px;
-    height: 50px;
-    margin: 47px auto 0;
-
-    @media screen and (max-width: 767px) {
-      width: 100%;
-      margin-top: 21px;
-    }
-  }
 }

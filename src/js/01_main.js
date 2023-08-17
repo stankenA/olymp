@@ -42,7 +42,6 @@ const feedbackSwiper = new Swiper('.feedback__swiper', {
       slidesPerView: 4,
       spaceBetween: 20,
     },
-
   },
   grabCursor: true,
   pagination: {
@@ -57,6 +56,24 @@ const projectSwiper = new Swiper('.project__swiper', {
   grabCursor: true,
   pagination: {
     el: ".project__swiper-pagination",
+    clickable: true,
+  },
+});
+
+const aboutSwiper = new Swiper('.about-reason__swiper', {
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    769: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+  },
+  grabCursor: true,
+  pagination: {
+    el: ".about-reason__swiper-pagination",
     clickable: true,
   },
 });
