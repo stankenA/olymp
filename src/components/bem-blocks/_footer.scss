@@ -222,6 +222,8 @@
     @media screen and (max-width: 767px) {
       padding: 6px 4px 10px;
       font-size: 14px;
+      flex-grow: unset;
+      width: 62%;
     }
   }
 
@@ -241,7 +243,7 @@
     @include transition;
 
     @media screen and (max-width: 767px) {
-      width: 80px;
+      width: 38%;
       font-size: 14px;
     }
 
